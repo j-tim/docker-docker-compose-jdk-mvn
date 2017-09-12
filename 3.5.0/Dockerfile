@@ -1,11 +1,11 @@
-FROM jtim/docker-docker-compose-jdk
+FROM jtim/docker-docker-compose-jdk:17.07-compose-1.16.1-openjdk-8u131
 
 RUN apk add --no-cache curl tar bash
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
 
-ARG MAVEN_VERSION=3.3.9
+ARG MAVEN_VERSION=3.5.0
 ARG USER_HOME_DIR="/root"
 
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
