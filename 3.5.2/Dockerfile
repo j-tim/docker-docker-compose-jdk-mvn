@@ -1,6 +1,6 @@
 FROM jtim/docker-docker-compose-jdk:18.01.0-compose-1.18.0-openjdk-8u151
 
-RUN apk add --no-cache curl tar bash
+RUN apk add --no-cache curl tar bash procps
 
 # Default to UTF-8 file.encoding
 ENV LANG C.UTF-8
