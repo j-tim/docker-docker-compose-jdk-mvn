@@ -1,17 +1,19 @@
-# Jtim custom Gitlab CI build image with Docker, Docker-compose, OpenJDK 8u171 and Maven 3.5.4  
+# Jtim custom Gitlab CI build image with Docker, Docker-compose, OpenJDK 8u191 and Maven 3.6.0
 
 ## Supported tags and respective Dockerfile links
 
 ### Latest version
 
-* Docker version: 18.05.0 ce-git
-* Docker compose: 1.21.2
-* Open JDK: 8u171
-* Maven: 3.5.4
+* Docker version: 18.09.1-ce-git
+* Docker compose: 1.23.1
+* Open JDK: 8u191
+* Maven: 3.6.0
 
 Since version `18.05.0-ce-git-compose-1.21.2-openjdk-8u171-maven-3.5.4` this image is not running as root anymore!
 
-* `18.05.0-ce-git-compose-1.21.2-openjdk-8u171-maven-3.5.4`, `maven-3.5.4`, `3.5.4`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.5.4/Dockerfile)
+* `18.09.1-ce-git-compose-1.23.1-openjdk-8u191-maven-3.6.0`, `maven-3.6.0`, `3.6.0`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.6.0/Dockerfile)
+
+* `18.05.0-ce-git-compose-1.21.2-openjdk-8u171-maven-3.5.4`, `maven-3.5.4`, [(3.5.4)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.5.4/Dockerfile)
 
 ### Deprecated images
 
@@ -34,7 +36,7 @@ stages:
   - maven
 
 maven-docker-job:
-  image: jtim/docker-docker-compose-jdk-mvn:18.05.0-ce-git-compose-1.21.2-openjdk-8u171-maven-3.5.4
+  image: jtim/docker-docker-compose-jdk-mvn:18.09.1-ce-git-compose-1.23.1-openjdk-8u191-maven-3.6.0
   stage: maven
   services:
     - docker:dind
