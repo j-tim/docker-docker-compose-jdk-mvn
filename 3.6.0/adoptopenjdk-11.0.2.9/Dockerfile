@@ -1,11 +1,8 @@
-FROM jtim/docker-docker-compose-jdk:18.09.1-ce-git-compose-1.23.1-openjdk-8u191
+FROM jtim/docker-docker-compose-jdk:18.09.3-ce-git-compose-1.23.2-adoptopenjdk-11.0.2.9
 
 USER root
 
-RUN apk add --no-cache curl tar bash procps
-
-# Default to UTF-8 file.encoding
-ENV LANG C.UTF-8
+RUN apt install curl tar procps
 
 ARG MAVEN_VERSION=3.6.0
 ENV USER_HOME_DIR="/home/bob-the-builder"
