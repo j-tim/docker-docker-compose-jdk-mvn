@@ -4,19 +4,31 @@
 
 ### Latest version
 
-* Docker version: 18.09.1-ce-git
-* Docker compose: 1.23.1
-* Open JDK: 8u191
-* Maven: 3.6.0
+Java 8:
+
+* Docker version: 20.10.2
+* Docker compose: 1.28.0
+* Open JDK: 8u252
+* Maven: 3.6.3
+
+Other available development tools:
+
+* Git: 2.26.2
+* Jq: jq-master-v20200428-28-g864c859e9d
+* Pack: 0.16.0+git-e0f6c50.build-1898
+
+## Supported versions
+
+* `20.10.2-compose-1.28.0-openjdk-8u252-maven-3.6.3`, `maven-3.6.3`, `3.6.3`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.6.3/openjdk-8u252/Dockerfile)
+
+## Running as non root
 
 Since version `18.05.0-ce-git-compose-1.21.2-openjdk-8u171-maven-3.5.4` this image is not running as root anymore!
 
-* `18.09.1-ce-git-compose-1.23.1-openjdk-8u191-maven-3.6.0`, `maven-3.6.0`, `3.6.0`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.6.0/Dockerfile)
-
-* `18.05.0-ce-git-compose-1.21.2-openjdk-8u171-maven-3.5.4`, `maven-3.5.4`, [(3.5.4)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.5.4/Dockerfile)
-
 ### Deprecated images
 
+* `18.09.1-ce-git-compose-1.23.1-openjdk-8u191-maven-3.6.0`, `maven-3.6.0`, `3.6.0`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.6.0/Dockerfile)
+* `18.05.0-ce-git-compose-1.21.2-openjdk-8u171-maven-3.5.4`, `maven-3.5.4`, [(3.5.4)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.5.4/Dockerfile)
 * `18.01.0-compose-1.18.0-openjdk-8u151-maven-3.5.2`, `maven-3.5.2`, `3.5.2`, [(3.5.2)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.5.2/Dockerfile)  
 * `17.07-compose-1.16.1-openjdk-8u131-maven-3.5.0`, `maven-3.5.0`, `3.5.0`, [(3.5.0)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.5.0/Dockerfile)  
 * `17.04-compose-1.12.0-openjdk-8u121-maven-3.3.9`, `maven-3.3.9`, [(3.3.9)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.3.9/Dockerfile)  
