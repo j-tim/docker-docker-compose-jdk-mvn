@@ -1,4 +1,4 @@
-# Jtim custom Gitlab CI build image with Docker, Docker-compose, OpenJDK 8u191 and Maven 3.6.0
+# Jtim custom Gitlab CI build image with Docker, Docker-compose, OpenJDK 8u252 and Maven 3.6.3
 
 ## Supported tags and respective Dockerfile links
 
@@ -58,6 +58,9 @@ maven-docker-job:
     - docker-compose -v
     - java -version
     - mvn -v
+    - git version
+    - jq --version
+    - pack --version
 ```
 
 ## Related images
