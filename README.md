@@ -2,9 +2,20 @@
 
 ## Supported tags and respective Dockerfile links
 
-### Latest version
+### Java 11 (latest)
 
-Java 8:
+* Docker version: 20.10.5
+* Docker compose: 1.28.6
+* Open JDK: 11.0.10_9
+* Maven: 3.6.3
+
+Other available development tools:
+
+* Git: 2.25.1
+* Jq: jq-1.6
+* Pack: 0.18.0+git-e00ee4a.build-2328
+
+### Java 8
 
 * Docker version: 20.10.2
 * Docker compose: 1.28.0
@@ -19,7 +30,13 @@ Other available development tools:
 
 ## Supported versions
 
-* `20.10.2-compose-1.28.0-openjdk-8u252-maven-3.6.3`, `maven-3.6.3`, `3.6.3`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.6.3/openjdk-8u252/Dockerfile)
+### Java 11
+
+* `20.10.5-compose-1.28.6-adoptopenjdk-11.0.10_9-maven-3.6.3`, `20.10.5-compose-1.28.6-adoptopenjdk-11-maven-3.6.3`, `maven-3.6.3`, `3.6.3`, [(latest)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.6.3/adoptopenjdk-11.0.10_9/Dockerfile)
+
+### Java 8
+
+* `20.10.2-compose-1.28.0-openjdk-8u252-maven-3.6.3`, [(openjdk-8u252-maven-3.6.3)](https://github.com/j-tim/docker-docker-compose-jdk-mvn/blob/master/3.6.3/openjdk-8u252/Dockerfile)
 
 ## Running as non root
 
@@ -61,6 +78,15 @@ maven-docker-job:
     - git version
     - jq --version
     - pack --version
+```
+
+You don't need to set these variables in your pipeline we already set them in the Docker images:
+
+```yml
+variables:
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
 ```
 
 ## Related images
